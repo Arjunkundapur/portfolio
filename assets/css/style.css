@@ -301,7 +301,8 @@ article.active {
 \*-----------------------------------*/
 
 main {
-  margin: 15px 12px;
+  /* reduced horizontal margins so sidebar can grow wider */
+  margin: 15px 8px;
   margin-bottom: 75px;
   min-width: 259px;
 }
@@ -1262,6 +1263,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 580px) {
 
+  /* make sidebar/article a bit wider on medium screens */
+  .sidebar, article {
+    width: 620px;
+    margin-inline: 6px;
+    padding: 30px;
+  }
+
   /**
    * CUSTOM PROPERTY
    */
@@ -1803,7 +1811,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    max-width: 1200px;
+    max-width: 90%;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -1812,8 +1820,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    min-width: 72%;
+    width: 72%;
     margin: 0;
   }
 
